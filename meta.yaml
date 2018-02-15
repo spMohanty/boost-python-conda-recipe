@@ -1,0 +1,22 @@
+# Adpated from https://github.com/conda/conda-recipes/tree/master/boost
+package:
+  name: boost-python
+  version: 1.66.0
+
+source:
+  fn: boost_1_66_0.tar.bz2
+  url: https://dl.bintray.com/boostorg/release/1.66.0/source/boost_1_66_0.tar.bz2
+  sha256: 5721818253e6a0989583192f96782c4a98eb6204965316df9f5ad75819225ca9
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - boost
+    - python
+
+about:
+  home: http://www.boost.org/
+  license: Boost-1.0
+  summary: Boost Python Library from the Boost C++ Libraries collection
